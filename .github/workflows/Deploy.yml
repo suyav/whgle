@@ -19,8 +19,8 @@ jobs:
         with:
           namespace: ${{ secrets.OKTETO_NAME }}
 
-      #- name: Destroy stack
-        #uses: okteto/destroy-stack@latest
+      - name: Destroy stack
+        uses: okteto/destroy-stack@latest
 
       - name: Create stack
         uses: okteto/deploy-stack@latest
